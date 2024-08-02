@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #0a0a14b2;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 1em 3em;
+    box-sizing: border-box;
+  }
+  .logo{
+    font-size: 1.5em; 
+    padding: 0px;
+  }
+  .img-box{
+    width: 100%;
+    height: 30.6em;
+  }
+  .img-box .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid #272727;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    margin: 0px;
+  }
+  
+  .date {
+    color: #aaa;
+    font-size: 1em;
+    margin: 10px 0;
+  }
+  .explanation-box{
+    max-width: 100%;
+    display: flex;
+    padding: 1rem;
+  }
+  .explanation {
+    justify-content: center;
+    max-width: 93%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .explanation.show-more {
+    white-space: normal;
+  }
+  
+  .button {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-decoration: underline;
+  }
