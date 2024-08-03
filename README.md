@@ -1,46 +1,71 @@
-# Getting Started with Create React App
+# NASA Astronomy Picture of the Day (APOD) Viewer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React application built with TypeScript that allows users to explore NASA's Astronomy Picture of the Day (APOD) API. The application fetches data from the NASA APOD API and displays the picture of the day along with its title, published date, and a detailed explanation. The explanation text can be expanded or collapsed using a "Read More" button.
 
-## Available Scripts
+# Features
 
-In the project directory, you can run:
+* Fetches and displays the Astronomy Picture of the Day from NASA's APOD API.
+* Shows the picture, title, published date, and an expandable/collapsible explanation.
+* Handles errors gracefully with user-friendly messages.
+* Responsive design ensuring compatibility across various devices.
+* Single-screen application without scrolling.
 
-### `npm start`
+# Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Getting Started
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### `npm test`
+## Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Node.js (>= 14.0.0)
+* npm (>= 6.0.0)
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+git clone https://github.com/jedidia-nku/nasa-apod-test.git
+cd nasa-apod-test
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install dependencies:**
 
-### `npm run eject`
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. **Replace the NASA API key:**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Go to NASA API and get your API key.
+* Open `src/api.ts` and replace API_KEY with your actual NASA API key.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+4. **Start the development server:**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+npm start
 
-## Learn More
+5. **Open your browser and navigate to:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+http://localhost:3000
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Usage
+
+* **APOD Component (`src/components/APOD.tsx`):** Fetches data from the NASA APOD API and displays the picture, title, date, and explanation. It includes a "Read More" button to expand the explanation text.
+
+* **API Handler (`src/api.ts`):** Contains the function to fetch data from the NASA APOD API.
+* **Styles (`src/components/APOD.css` & `src/App.css`):**  Contains the CSS styles for the APOD component and the global styles for the app.
+
+# Error Handling
+
+The application gracefully handles errors that may occur while fetching data from the NASA API. If the data cannot be fetched, a user-friendly error message is displayed.
+
+# Responsive Design
+
+The app is designed to be responsive and compatible with various devices. The layout adjusts to fit different screen sizes, ensuring a good user experience on both desktop and mobile devices.
+
+# Built With
+
+* **React** - A JavaScript library for building user interfaces.
+* **TypeScript** - A typed superset of JavaScript that compiles to plain JavaScript.
+* **Axios** - A promise-based HTTP client for the browser and Node.js.
+
+# Acknowledgments
+
+* Thanks to (NASA)[https://www.nasa.gov/] for providing the APOD API.
