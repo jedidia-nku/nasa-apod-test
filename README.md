@@ -67,7 +67,7 @@ The app is designed to be responsive and compatible with various devices. The la
 * **Axios** - A promise-based HTTP client for the browser and Node.js.
 
 # Deployed App
-Click this link: [NASA'S PICTURE OF THE DAY](https://66ad5a5d1a567edde0e383db--sprightly-cranachan-7ade9e.netlify.app/)
+Click this link: [NASA'S PICTURE OF THE DAY](https://sprightly-cranachan-7ade9e.netlify.app/)
 
 # Acknowledgments
 
