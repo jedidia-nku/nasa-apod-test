@@ -4,8 +4,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #0a0a14b2;
-  color: #fff;
+  color: #575151;
   width: 100%;
   height: 100%;
   margin: 0px;
@@ -19,7 +18,11 @@
 }
 .img-box{
   width: 100%;
-  height: 28.9em;
+  height: 27em;
+  box-shadow: 3px 1px 15px rgba(0, 0, 0, 0.6);
+  padding: 6px;
+  border-radius: 5px;
+  background-color: #2b2b44;
 }
 .img-box .image {
   width: 100%;
@@ -58,7 +61,7 @@
 }
 
 .button {
-  color: rgb(255, 255, 255);
+  color: rgb(65, 62, 62);
   cursor: pointer;
   text-decoration: underline;
 }
