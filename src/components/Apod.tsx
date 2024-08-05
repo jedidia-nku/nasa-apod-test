@@ -47,9 +47,9 @@ const Apod: React.FC = () => {
           <p className={`explanation ${showMore ? 'show-more' : ''}`}>
             {data.explanation} 
           </p>
-          <a className="button" onClick={() => setShowMore(!showMore)}> 
+          <button className="button" onClick={() => setShowMore(!showMore)}> 
             {showMore ? 'Show Less' : 'Read More'}
-          </a>
+          </button>
         </div>
       </div>
     </>

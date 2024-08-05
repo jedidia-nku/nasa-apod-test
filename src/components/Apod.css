@@ -63,5 +63,6 @@
 .button {
   color: rgb(65, 62, 62);
   cursor: pointer;
+  border: none;
   text-decoration: underline;
 }
